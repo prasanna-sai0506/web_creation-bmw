@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUN</title>
+    <script>
+        function sum() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var c = a + b;
+            window.alert("the sum is :"+c);
+        }
+        function difference() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var c = a - b;
+            window.alert("the difference is :"+c);
+        }
+        function product() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var c = a * b;
+            window.alert("the sum is :"+c);
+        }
+        function division() {
+            var a = parseFloat(document.getElementById("tb1").value);
+            var b = parseFloat(document.getElementById("tb2").value);
+            var c = a / b;
+            window.alert("the difference is :"+c);
+        }
+    </script>
+</head>
+<body>
+    <form  action="add.html" onsubmit="return false;"method="post">
+        <div>
+            <div class="avalue">
+                Enter a value:<input type="number" name="tb1" id="tb1">
+            </div>
+            <div class="bvalue">
+                Enter b value:<input type="number" name="tb2" id="tb2">
+            </div>
+            <div class="avalue">
+                <button onclick="sum()" type="submit" value="add">SUM</button>
+                <button onclick="difference()" type="submit" value="substract">difference</button>
+                <button onclick="product()" type="submit" value="product">Product</button>
+                <button onclick="division()" type="submit" value="division">Division</button>
+            </div>
+        </div>
+    </form>
+   
+</body>
+</html>
